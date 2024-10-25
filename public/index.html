@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="bg-black shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center h-16">
+            
+            <div class="flex items-center">
+              <a href="index.html" class="flex items-center">
+               <span class="ml-3 text-2xl font-bold text-gray-100">BLOG</span>
+              </a>
+            </div>
+      
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 ml-auto mr-10"> <!-- Adjusted to move to the right -->
+                <a href="index.html" class="text-gray-100 hover:text-gray-300 transition duration-300">Home</a>
+                <a href="about.html" class="text-gray-100 hover:text-gray-300 transition duration-300">About</a>
+                <a href="register.html" class="text-gray-100 hover:text-gray-800 transition duration-300">Register</a>
+             </div>
+      
+         
+          </div>
+        </div>
+       
+      </header>
+      
+      <section class="relative bg-cover bg-center h-screen" >
+        <div class="absolute inset-0 bg-black bg-opacity-100"></div> <!-- Overlay -->
+        
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-center text-white ">
+          <h1 class="text-4xl md:text-6xl font-bold transition-transform transform hover:scale-105 hover:opacity-90 duration-300 ease-in-out">Welcome To My Blog Site</h1>
+          <p class="mt-4 text-lg md:text-xl">Log in and Post Now</p>
+          
+          <a href="login.html" class="mt-8 bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full transition duration-300">
+            Log in
+          </a>
+        </div>
+      </section>
+      <section class="py-16 bg-black">
+        <h2 class="text-3xl font-bold text-center text-gray-100 mb-8">Popular Posts</h2>
+        
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-gray-800 rounded-lg shadow-lg p-6 mb-6">
+                <h3 class="text-2xl font-bold text-gray-100 mb-4">Understanding JavaScript Closures</h3>
+                <p class="text-gray-300 mb-4">
+                    JavaScript closures are a powerful concept that allows functions to retain access to their lexical scope even when executed outside that scope. This article dives deep into how closures work, providing examples and practical use cases.
+                </p>
+                <a href="/posts/1" class="text-blue-400 hover:underline">Read more...</a>
+            </div>
+    
+            <div class="bg-gray-800 rounded-lg shadow-lg p-6 mb-6">
+                <h3 class="text-2xl font-bold text-gray-100 mb-4">A Guide to Responsive Web Design</h3>
+                <p class="text-gray-300 mb-4">
+                    In today's world, it's essential to create web applications that look great on all devices. This guide covers the principles of responsive web design, including fluid grids, flexible images, and media queries.
+                </p>
+                <a href="/posts/2" class="text-blue-400 hover:underline">Read more...</a>
+            </div>
+    
+            <div class="bg-gray-800 rounded-lg shadow-lg p-6 mb-6">
+                <h3 class="text-2xl font-bold text-gray-100 mb-4">Getting Started with Tailwind CSS</h3>
+                <p class="text-gray-300 mb-4">
+                    Tailwind CSS is a utility-first CSS framework that can help you create beautiful designs without leaving your HTML. This post will walk you through the basics of Tailwind CSS and how to set it up in your projects.
+                </p>
+                <a href="/posts/3" class="text-blue-400 hover:underline">Read more...</a>
+            </div>
+        </div>
+    </section>
+    
+
+           <!-- footer section -->
+           <footer class="bg-black text-white py-10 flex justify-center">
+            <!-- Bottom Copyright Section -->
+            <div class="mt-10 text-center text-gray-400">
+                <p>&copy; 2024 My Blog. All rights reserved.</p>
+            </div>
+        </footer>
+        
+     
+      <script src="/js/app.js"></script>
+</body>
+</html>
